@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
     <title>Todo List</title>
-</head>
+  </head>
 
-<body>
-    <div class="empty-state">
-        <h2 class="empty-state__title">Add your first todo</h2>
-        <p class="empty-state__description">What do you want to get done today?</p>
-    </div>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="todoLogo.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Simple Todo List Using Pure Javascript
+        </a>
+      </div>
+    </nav>
 
     <div class="container">
-        <div class="app-title">Todo List</div>
-        <div class="todo-list js-todo-list">
-            <ul>
-
-            </ul>
-        </div>
-        <form class="js-form">
-            <input type="text" class="js-todo-input">
-        </form>
-
-
+      <div class="empty-state">
+        <h2 class="display-4">Add your first todo</h2>
+        <h3 class="display-6">What do you want to get done today?</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="app-title">Todo List</div>
+      <div class="todo-list js-todo-list lead">
+        <ul></ul>
+      </div>
+      <form class="js-form">
+        <input type="text" class="js-todo-input" />
+      </form>
     </div>
 
-
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

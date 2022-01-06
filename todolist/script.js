@@ -28,6 +28,12 @@ form.addEventListener("submit", (event) => {
 });
 
 function renderTodos(todo) {
+
+  if(todoItems.length >0){
+    const em = document.querySelector('.empty-state');
+    if(em)
+      em.remove();
+  }
   const list = document.querySelector(".js-todo-list");
   const node = document.createElement("li");
 
@@ -41,8 +47,8 @@ function renderTodos(todo) {
    <input id="${todo.id}" type="checkbox"/>
     <label for="${todo.id}" class="tick js-tick"></label>
     <span>${todo.text} is ${done}</span>
-    <button class="delete-todo js-delete-todo">
-    <svg><use href="#delete-icon"></use></svg>
+    <button class="delete-todo js-delete-todo btn btn-danger btn-smbtn btn-primary btn-sm">
+    Delete
     </button>    <label label
     `;
 
@@ -65,7 +71,7 @@ todolist.addEventListener("click", (event) => {
   }
 });
 
-function toggleDone(key) {
+function toggleDone(key) {// Toggle for Completion
   const index = todoItems.findIndex((e) => e.id == key);
   todoItems[index].checked = !todoItems[index].checked;
 
