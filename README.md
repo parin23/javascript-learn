@@ -7,6 +7,6 @@ This repo will contain personal Web-developement related projects.
 - Todo-list in Pure JS and Added BootStrap for Additional Styling
 - A Random Number Generator in Pure JS + BootStrap
 
-# Link to Github-pages
+#### Link to Github-pages
 
 [GitHub Pages](https://parin23.github.io/javascript-learn/)
