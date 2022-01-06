@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Random Generator</title>
+    <style>
+      body {
+        background-color: #293251;
+      }
+
+      .container {
+        width: 300px;
+        margin-top: 5em;
+        text-align: center;
+      }
+      .screen {
+          font-size: 4em;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container position-relative rounded">
+      <div class="title shadow-lg p-3 mb-5 bg-body start-50 rounded">
+        <h3>Random Number Generator</h3>
+      </div>
+      <div class="box centered shadow-lg p-3 mb-5 bg-body rounded">
+        <form id="form-1" class="form-inlinerow g-3 align-items-center">
+          <input type="text" id="lowerbound" class="form-control" />
+          <input type="text" id="upperbound" class="mt-3 form-control" />
+          <button type="submit" class="mt-3 btn btn-outline-success">
+            Generate!
+          </button>
+        </form>
+      </div>
+
+      <div class="screen shadow-lg p-3 mb-5 bg-body rounded">
+        <span> 0 </span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
